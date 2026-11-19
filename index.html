@@ -13,10 +13,12 @@
 
 <!--
   ===== SHARE PREVIEW (WhatsApp, Facebook, LinkedIn, X/Twitter, Telegram, Slack, iMessage) =====
-  CHANGE THESE TWO URLS before going live:
+  CHANGE THESE URLS before going live (full https:// addresses only - relative paths do NOT work):
     1) og:url / canonical  -> the exact public address of THIS page
-    2) og:image / twitter:image -> the exact public address of images/og-thumbnail.jpg
-  Both must be full https:// addresses. Relative paths do NOT work for previews.
+    2) og:image            -> images/og-thumbnail.jpg   (used by WhatsApp, Facebook, LinkedIn, Telegram, Slack, iMessage)
+    3) twitter:image       -> images/twitter-thumbnail.jpg (used by X / Twitter)
+  Upload ALL files from the images folder: og-thumbnail, twitter-thumbnail (used by this page)
+  plus facebook / linkedin / whatsapp thumbnails (for posting the image directly in those apps).
 -->
 <link rel="canonical" href="https://www.unitech-india.net/blog/machine-kharidne-se-pehle/">
 <meta property="og:type" content="article">
@@ -34,7 +36,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Machine Kharidne Se Pehle, Ek Baar Dekh Lo | UNITECH">
 <meta name="twitter:description" content="A Mumbai story: see the machine run live before you buy.">
-<meta name="twitter:image" content="https://www.unitech-india.net/images/og-thumbnail.jpg">
+<meta name="twitter:image" content="https://www.unitech-india.net/images/twitter-thumbnail.jpg">
 <meta name="twitter:image:alt" content="UNITECH - See the machine before you buy.">
 <!-- extra fallbacks: Google, LinkedIn, older WhatsApp/Telegram/Skype/Pinterest crawlers -->
 <meta itemprop="name" content="Machine Kharidne Se Pehle, Ek Baar Dekh Lo | UNITECH">
@@ -303,7 +305,7 @@
         <!-- VISIONPRINT photo: images/visionprint2.jpg (transparent PNG is best, white-background JPG also works) -->
         <div class="media">
           <div class="glow"></div><div class="floor"></div>
-          <img class="machine swing" style="--amp:20deg" src="images/visionprintdura.png" alt="UNITECH VisionPrint screen printing machine" onerror="this.closest('.media').classList.add('noimg')">
+          <img class="machine swing" style="--amp:20deg" src="images/visionprint2.jpg" alt="UNITECH VisionPrint screen printing machine" onerror="this.closest('.media').classList.add('noimg')">
           <div class="ph"><b>VISIONPRINT</b><span>Add your photo at images/visionprint2.jpg</span></div>
           <span class="mlabel">VISIONPRINT</span>
         </div>
